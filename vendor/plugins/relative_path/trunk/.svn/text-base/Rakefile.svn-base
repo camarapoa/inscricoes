@@ -1,0 +1,61 @@
+require 'rake'
+require 'rake/testtask'
+require 'rake/packagetask'
+require 'rake/rdoctask'
+require 'find'
+
+desc 'Default: run unit tests.'
+task :default => :test
+
+desc 'Test ActiveScaffold.'
+Rake::TestTask.new(:test) do |t|
+  t.libs << 'lib'
+  t.pattern = 'test/**/*_test.rb'
+  t.verbose = true
+end
+
+# Globals
+PKG_NAME = 'relative_path_plugin'
+PKG_VERSION = '0.3.0'
+
+PKG_FILES = ['README', 'CHANGELOG', 'MIT-LICENSE', 'init.rb']
+PKG_DIRECTORIES = ['app/', 'lib/','test/']
+PKG_DIRECTORIES.each do |dir|
+  Find.find(dir) do |f|
+    if FileTest.directory?(f) and f =~ /\.svn/
+      Find.prune
+    else
+      PKG_FILES << f
+    end
+  end
+end
+
+# Tasks
+
+task :package
+Rake::PackageTask.new(PKG_NAME, PKG_VERSION) do |p|
+  p.need_tar = true
+  p.package_files = PKG_FILES
+end
+
+# "Gem" part of the Rakefile
+begin
+  require 'rake/gempackagetask'
+  
+  spec = Gem::Specification.new do |s|
+    s.platform = Gem::Platform::RUBY
+    s.summary = "relative_path plugin makes all urls into relative urls"
+    s.name = PKG_NAME
+    s.version = PKG_VERSION
+    s.requirements << 'none'
+    s.files = PKG_FILES
+    s.description = "relative_path plugin makes all urls into relative urls"
+  end
+  
+  task :package_gem
+  Rake::GemPackageTask.new(spec) do |pkg|
+    pkg.need_zip = true
+    pkg.need_tar = true
+  end
+rescue LoadError
+end

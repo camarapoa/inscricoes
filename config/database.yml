@@ -1,0 +1,19 @@
+development:
+  adapter: sqlserver
+  database: portal
+  encoding: UTF8
+  host: DBI:ADO:Provider=SQLOLEDB;Data Source=cmpa-s01;Initial Catalog=portal;User Id=sql_portal;Password=portal
+  username: sql_portal
+  password: portal
+  log_file: log/mongrel.log
+  pid_file: log/mongrel.pid
+  
+production:
+  adapter: sqlserver
+  database: portal
+  encoding: UTF8
+  host: DBI:ADO:Provider=SQLOLEDB;Data Source=cmpa-s01;Initial Catalog=portal;User Id=sql_portal;Password=portal
+  username: sql_portal
+  password: portal
+  log_file: log/mongrel.log
+  pid_file: log/mongrel.pid

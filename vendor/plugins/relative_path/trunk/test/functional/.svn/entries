@@ -1,0 +1,40 @@
+8
+
+dir
+133
+svn://cmpa-s01/inscricoes/vendor/plugins/relative_path/trunk/test/functional
+svn://cmpa-s01
+
+
+
+2008-03-24T18:21:20.061250Z
+133
+marcia
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+5ec1a7ab-c774-4f47-95f2-263585ca80a8
+
+basic_test.rb
+file
+
+
+
+
+2008-03-24T18:23:32.730000Z
+14ca2aa47e2516139677dfba2873e027
+2008-03-24T18:21:20.061250Z
+133
+marcia
+

@@ -1,0 +1,40 @@
+8
+
+dir
+133
+svn://cmpa-s01/inscricoes/vendor/plugins/relative_path/trunk/lib
+svn://cmpa-s01
+
+
+
+2008-03-24T18:21:20.061250Z
+133
+marcia
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+5ec1a7ab-c774-4f47-95f2-263585ca80a8
+
+relative_path.rb
+file
+
+
+
+
+2008-03-24T18:23:32.948750Z
+21571d3c1765e1bb5b8064cf6dbf7648
+2008-03-24T18:21:20.061250Z
+133
+marcia
+

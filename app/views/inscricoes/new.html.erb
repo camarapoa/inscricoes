@@ -1,0 +1,20 @@
+<% form_for :inscrito, @inscrito,  :url => { :action => :create } do |f|%>
+
+	<%= error_messages_for :inscrito%>	
+	
+	<p><div class='caption'>Nome (verifique o correto preenchimento, pois o nome constará no certificado conforme digitado)</div><%= f.text_field	:nome, :size => 80%></p>	
+	<p><div class='caption'>Endereço</div><%= f.text_area		:endereco, :cols => 50, :rows => 3 %></p>	
+	<p><div class='caption'>Número</div><%= f.text_field		:numero %></p>	
+	<p><div class='caption'>Complemento</div><%= f.text_field		:complemento %></p>	
+	<p><div class='caption'>Bairro</div><%= f.text_field		:bairro %></p>	
+	<p><div class='caption'>Cidade</div><%= f.text_field		:cidade %></p>	
+	<p><div class='caption'>UF</div><%= f.text_field		:uf, :size => 2 , :maxlength => 2%></p>	
+	<p><div class='caption'>Telefone</div>	<%= f.text_field 	:telefone%></p>
+	<p><div class='caption'>E-mail</div><%= f.text_field 	:email, :size => 50%>	</p>
+	<p><div class='caption'>Instituição</div><%= f.text_field 	:instituicao, :size => 80%>	</p>
+	<br/>
+	<br/>
+	<%= submit_tag	'Registrar inscrição', :disable_with => 'Aguarde...verificando...' %>
+	<%= link_to "Cancelar", inscricoes_path %>
+
+<% end %>

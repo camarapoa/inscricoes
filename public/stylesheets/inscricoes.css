@@ -1,0 +1,86 @@
+body {font-family:verdana;font-size:11px;margin:0}
+h1{padding-left:30px;font-family:verdana;font-size:3em;word-spacing:normal;font-weight:normal;letter-spacing:-1px;color:black;margin-bottom:0px}
+h3{padding-left:30px;font-family:verdana;font-size:2em;word-spacing:normal;font-weight:normal;letter-spacing:-1px;color:white;margin-top:0px;}
+
+#banner{height:130px;background-color:#669999;border-bottom: 3px solid black;margin-bottom:30px;color:black}
+.caption {font-weight:bold}
+
+#texto{font-family:verdana;font-size:14px;width:70%;padding-left:40px;text-align:justify;}
+.detalhe_palestra {text-indent: 25px}
+#texto p.main{font-size:16}
+.question{font-weight:bold;font-size:14px}
+#content{padding-left:40px;}
+.errorExplanation {
+     background-color:#FFEAE8;
+     border:1px solid #FF8B7F;
+     color:#000;
+     text-align:left;
+     vertical-align:top;
+     padding-top:5px;
+     padding-left:20px;
+     padding-bottom:10px;
+     margin-top:3px;
+     margin-bottom:10px;
+}
+
+.errorExplanation h2 {
+     color:#F0775E;
+}
+
+.errorExplanation ul {
+     list-style-type: disc;     
+     list-style-position: inside;
+     margin:15px;
+     padding:3px;
+}
+
+.fieldWithErrors input[type="text"],
+.fieldWithErrors input[type="password"] {
+	border-color:#FF8B7F;
+}
+
+#edital{background-color:#E9E9E9;padding:20px}
+#menubloco {font-family:verdana;font-size:14px;text-align: left;margin-bottom:30px}
+#menubloco ul {
+    list-style-type: none;    
+    padding: 0;
+    position: relative;    
+}
+#menubloco li {
+    display: inline;
+    text-align: center;
+    font-weight:bold;
+    margin: 0 5px;
+}
+#menubloco li a {
+    padding: 1px 7px;
+    color: #666;    
+    text-decoration: none;
+}
+#menubloco li a:hover {color: #000;border-bottom:3px solid #006F00;}
+
+
+.notice, .error, .warning, .info, .help , .add_document{font-weight: bold;
+margin: -10px 0 15px 0;
+padding: 5px 5px 5px 27px;
+}
+
+.warning {
+border: 1px solid #dd0;
+background: #ffc  no-repeat 5px center;
+color: #000;
+font-size:11px;
+}
+
+.info {
+border: 1px solid #82c2d4;
+background: #ebf5f8  no-repeat 5px center;
+color: #000;
+font-size:11px;
+}
+
+.notice {
+border: 1px solid #9c9;
+background: #e2f9e3  no-repeat 5px center;
+color: #060;
+}
